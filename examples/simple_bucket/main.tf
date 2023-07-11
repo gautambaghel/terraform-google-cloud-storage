@@ -35,9 +35,4 @@ module "bucket" {
   custom_placement_config = {
     data_locations : ["US-EAST4", "US-WEST1"]
   }
-
-  iam_members = [{
-    role   = "roles/storage.objectViewer"
-    member = "group:test-gcp-ops@test.blueprints.joonix.net"
-  }]
 }
